@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6052C43C29F9957F0026C32F /* PlantLadyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052C43B29F9957F0026C32F /* PlantLadyApp.swift */; };
+		6052C43E29F9957F0026C32F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052C43D29F9957F0026C32F /* ContentView.swift */; };
+		6052C44029F995810026C32F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6052C43F29F995810026C32F /* Assets.xcassets */; };
+		6052C44329F995810026C32F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6052C44229F995810026C32F /* Preview Assets.xcassets */; };
+		6052C44D29F995810026C32F /* PlantLadyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052C44C29F995810026C32F /* PlantLadyTests.swift */; };
+		6052C45729F995810026C32F /* PlantLadyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052C45629F995810026C32F /* PlantLadyUITests.swift */; };
+		6052C45929F995810026C32F /* PlantLadyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052C45829F995810026C32F /* PlantLadyUITestsLaunchTests.swift */; };
+		6052C46D29F996540026C32F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052C46C29F996540026C32F /* HomeView.swift */; };
+		6052C47329F9BD250026C32F /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052C47229F9BD250026C32F /* ExploreView.swift */; };
+		6052C47829F9BF010026C32F /* PlantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052C47729F9BF010026C32F /* PlantDetailView.swift */; };
+		6052C47B29F9E2060026C32F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6052C47A29F9E2060026C32F /* Alamofire */; };
+		6052C47F29F9E3490026C32F /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052C47E29F9E3490026C32F /* PlantModel.swift */; };
+		6052C48129F9E39D0026C32F /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052C48029F9E39D0026C32F /* Plant.swift */; };
+		6052C48329F9E4920026C32F /* PlantDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052C48229F9E4920026C32F /* PlantDetailInteractor.swift */; };
+		6052C48529F9E5530026C32F /* PlantDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052C48429F9E5530026C32F /* PlantDetailPresenter.swift */; };
+		6052C48729F9E96D0026C32F /* PlantDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052C48629F9E96D0026C32F /* PlantDetailConfigurator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6052C44929F995810026C32F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6052C43029F9957F0026C32F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6052C43729F9957F0026C32F;
+			remoteInfo = PlantLady;
+		};
+		6052C45329F995810026C32F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6052C43029F9957F0026C32F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6052C43729F9957F0026C32F;
+			remoteInfo = PlantLady;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6052C43829F9957F0026C32F /* PlantLady.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantLady.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6052C43B29F9957F0026C32F /* PlantLadyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantLadyApp.swift; sourceTree = "<group>"; };
+		6052C43D29F9957F0026C32F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6052C43F29F995810026C32F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6052C44229F995810026C32F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6052C44829F995810026C32F /* PlantLadyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlantLadyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6052C44C29F995810026C32F /* PlantLadyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantLadyTests.swift; sourceTree = "<group>"; };
+		6052C45229F995810026C32F /* PlantLadyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlantLadyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6052C45629F995810026C32F /* PlantLadyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantLadyUITests.swift; sourceTree = "<group>"; };
+		6052C45829F995810026C32F /* PlantLadyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantLadyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6052C46C29F996540026C32F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6052C47229F9BD250026C32F /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		6052C47729F9BF010026C32F /* PlantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailView.swift; sourceTree = "<group>"; };
+		6052C47E29F9E3490026C32F /* PlantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
+		6052C48029F9E39D0026C32F /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		6052C48229F9E4920026C32F /* PlantDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailInteractor.swift; sourceTree = "<group>"; };
+		6052C48429F9E5530026C32F /* PlantDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailPresenter.swift; sourceTree = "<group>"; };
+		6052C48629F9E96D0026C32F /* PlantDetailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailConfigurator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6052C43529F9957F0026C32F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6052C47B29F9E2060026C32F /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6052C44529F995810026C32F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6052C44F29F995810026C32F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6052C42F29F9957F0026C32F = {
+			isa = PBXGroup;
+			children = (
+				6052C43A29F9957F0026C32F /* PlantLady */,
+				6052C45529F995810026C32F /* PlantLadyUITests */,
+				6052C43929F9957F0026C32F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6052C43929F9957F0026C32F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6052C43829F9957F0026C32F /* PlantLady.app */,
+				6052C44829F995810026C32F /* PlantLadyTests.xctest */,
+				6052C45229F995810026C32F /* PlantLadyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6052C43A29F9957F0026C32F /* PlantLady */ = {
+			isa = PBXGroup;
+			children = (
+				6052C43B29F9957F0026C32F /* PlantLadyApp.swift */,
+				6052C43D29F9957F0026C32F /* ContentView.swift */,
+				6052C43F29F995810026C32F /* Assets.xcassets */,
+				6052C44129F995810026C32F /* Preview Content */,
+				6052C46729F995EB0026C32F /* Domain */,
+				6052C44B29F995810026C32F /* PlantLadyTests */,
+			);
+			path = PlantLady;
+			sourceTree = "<group>";
+		};
+		6052C44129F995810026C32F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6052C44229F995810026C32F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6052C44B29F995810026C32F /* PlantLadyTests */ = {
+			isa = PBXGroup;
+			children = (
+				6052C44C29F995810026C32F /* PlantLadyTests.swift */,
+			);
+			path = PlantLadyTests;
+			sourceTree = "<group>";
+		};
+		6052C45529F995810026C32F /* PlantLadyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6052C45629F995810026C32F /* PlantLadyUITests.swift */,
+				6052C45829F995810026C32F /* PlantLadyUITestsLaunchTests.swift */,
+			);
+			path = PlantLadyUITests;
+			sourceTree = "<group>";
+		};
+		6052C46729F995EB0026C32F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				6052C46E29F9BCE80026C32F /* Explore */,
+				6052C46829F996090026C32F /* Home */,
+				6052C47429F9BECA0026C32F /* Plant */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6052C46829F996090026C32F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6052C46929F996180026C32F /* Models */,
+				6052C46A29F996220026C32F /* Scenes */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6052C46929F996180026C32F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6052C46A29F996220026C32F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				6052C46B29F996370026C32F /* UI Components */,
+				6052C46C29F996540026C32F /* HomeView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		6052C46B29F996370026C32F /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		6052C46E29F9BCE80026C32F /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				6052C46F29F9BCEE0026C32F /* Models */,
+				6052C47029F9BD010026C32F /* Scenes */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		6052C46F29F9BCEE0026C32F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6052C47029F9BD010026C32F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				6052C47129F9BD140026C32F /* UI Components */,
+				6052C47229F9BD250026C32F /* ExploreView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		6052C47129F9BD140026C32F /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		6052C47429F9BECA0026C32F /* Plant */ = {
+			isa = PBXGroup;
+			children = (
+				6052C47529F9BEEA0026C32F /* Models */,
+				6052C47629F9BEF10026C32F /* Scenes */,
+			);
+			path = Plant;
+			sourceTree = "<group>";
+		};
+		6052C47529F9BEEA0026C32F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6052C48029F9E39D0026C32F /* Plant.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6052C47629F9BEF10026C32F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				6052C47C29F9E2C20026C32F /* GetPlantDetail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		6052C47C29F9E2C20026C32F /* GetPlantDetail */ = {
+			isa = PBXGroup;
+			children = (
+				6052C47D29F9E31C0026C32F /* UI Components */,
+				6052C47729F9BF010026C32F /* PlantDetailView.swift */,
+				6052C47E29F9E3490026C32F /* PlantModel.swift */,
+				6052C48229F9E4920026C32F /* PlantDetailInteractor.swift */,
+				6052C48429F9E5530026C32F /* PlantDetailPresenter.swift */,
+				6052C48629F9E96D0026C32F /* PlantDetailConfigurator.swift */,
+			);
+			path = GetPlantDetail;
+			sourceTree = "<group>";
+		};
+		6052C47D29F9E31C0026C32F /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6052C43729F9957F0026C32F /* PlantLady */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6052C45C29F995810026C32F /* Build configuration list for PBXNativeTarget "PlantLady" */;
+			buildPhases = (
+				6052C43429F9957F0026C32F /* Sources */,
+				6052C43529F9957F0026C32F /* Frameworks */,
+				6052C43629F9957F0026C32F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlantLady;
+			packageProductDependencies = (
+				6052C47A29F9E2060026C32F /* Alamofire */,
+			);
+			productName = PlantLady;
+			productReference = 6052C43829F9957F0026C32F /* PlantLady.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6052C44729F995810026C32F /* PlantLadyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6052C45F29F995810026C32F /* Build configuration list for PBXNativeTarget "PlantLadyTests" */;
+			buildPhases = (
+				6052C44429F995810026C32F /* Sources */,
+				6052C44529F995810026C32F /* Frameworks */,
+				6052C44629F995810026C32F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6052C44A29F995810026C32F /* PBXTargetDependency */,
+			);
+			name = PlantLadyTests;
+			productName = PlantLadyTests;
+			productReference = 6052C44829F995810026C32F /* PlantLadyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6052C45129F995810026C32F /* PlantLadyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6052C46229F995810026C32F /* Build configuration list for PBXNativeTarget "PlantLadyUITests" */;
+			buildPhases = (
+				6052C44E29F995810026C32F /* Sources */,
+				6052C44F29F995810026C32F /* Frameworks */,
+				6052C45029F995810026C32F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6052C45429F995810026C32F /* PBXTargetDependency */,
+			);
+			name = PlantLadyUITests;
+			productName = PlantLadyUITests;
+			productReference = 6052C45229F995810026C32F /* PlantLadyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6052C43029F9957F0026C32F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					6052C43729F9957F0026C32F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					6052C44729F995810026C32F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6052C43729F9957F0026C32F;
+					};
+					6052C45129F995810026C32F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6052C43729F9957F0026C32F;
+					};
+				};
+			};
+			buildConfigurationList = 6052C43329F9957F0026C32F /* Build configuration list for PBXProject "PlantLady" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6052C42F29F9957F0026C32F;
+			packageReferences = (
+				6052C47929F9E2060026C32F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 6052C43929F9957F0026C32F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6052C43729F9957F0026C32F /* PlantLady */,
+				6052C44729F995810026C32F /* PlantLadyTests */,
+				6052C45129F995810026C32F /* PlantLadyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6052C43629F9957F0026C32F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6052C44329F995810026C32F /* Preview Assets.xcassets in Resources */,
+				6052C44029F995810026C32F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6052C44629F995810026C32F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6052C45029F995810026C32F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6052C43429F9957F0026C32F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6052C46D29F996540026C32F /* HomeView.swift in Sources */,
+				6052C48729F9E96D0026C32F /* PlantDetailConfigurator.swift in Sources */,
+				6052C43E29F9957F0026C32F /* ContentView.swift in Sources */,
+				6052C47329F9BD250026C32F /* ExploreView.swift in Sources */,
+				6052C48329F9E4920026C32F /* PlantDetailInteractor.swift in Sources */,
+				6052C43C29F9957F0026C32F /* PlantLadyApp.swift in Sources */,
+				6052C48129F9E39D0026C32F /* Plant.swift in Sources */,
+				6052C48529F9E5530026C32F /* PlantDetailPresenter.swift in Sources */,
+				6052C47829F9BF010026C32F /* PlantDetailView.swift in Sources */,
+				6052C47F29F9E3490026C32F /* PlantModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6052C44429F995810026C32F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6052C44D29F995810026C32F /* PlantLadyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6052C44E29F995810026C32F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6052C45929F995810026C32F /* PlantLadyUITestsLaunchTests.swift in Sources */,
+				6052C45729F995810026C32F /* PlantLadyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6052C44A29F995810026C32F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6052C43729F9957F0026C32F /* PlantLady */;
+			targetProxy = 6052C44929F995810026C32F /* PBXContainerItemProxy */;
+		};
+		6052C45429F995810026C32F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6052C43729F9957F0026C32F /* PlantLady */;
+			targetProxy = 6052C45329F995810026C32F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6052C45A29F995810026C32F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6052C45B29F995810026C32F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6052C45D29F995810026C32F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlantLady/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.PlantLady;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6052C45E29F995810026C32F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlantLady/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.PlantLady;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6052C46029F995810026C32F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.PlantLadyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlantLady.app/PlantLady";
+			};
+			name = Debug;
+		};
+		6052C46129F995810026C32F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.PlantLadyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlantLady.app/PlantLady";
+			};
+			name = Release;
+		};
+		6052C46329F995810026C32F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.PlantLadyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlantLady;
+			};
+			name = Debug;
+		};
+		6052C46429F995810026C32F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.PlantLadyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlantLady;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6052C43329F9957F0026C32F /* Build configuration list for PBXProject "PlantLady" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6052C45A29F995810026C32F /* Debug */,
+				6052C45B29F995810026C32F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6052C45C29F995810026C32F /* Build configuration list for PBXNativeTarget "PlantLady" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6052C45D29F995810026C32F /* Debug */,
+				6052C45E29F995810026C32F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6052C45F29F995810026C32F /* Build configuration list for PBXNativeTarget "PlantLadyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6052C46029F995810026C32F /* Debug */,
+				6052C46129F995810026C32F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6052C46229F995810026C32F /* Build configuration list for PBXNativeTarget "PlantLadyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6052C46329F995810026C32F /* Debug */,
+				6052C46429F995810026C32F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6052C47929F9E2060026C32F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6052C47A29F9E2060026C32F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6052C47929F9E2060026C32F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6052C43029F9957F0026C32F /* Project object */;
+}
