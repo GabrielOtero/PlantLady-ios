@@ -9,12 +9,15 @@ import SwiftUI
 
 struct HomeView: View {
     @State var goToPlantDetail: Bool = false
+    @State var goToQuiz: Bool = false
     @State var plantId: Int?
     
     var body: some View {
         NavigationView{
             VStack {
                 NavigationLink(destination: PlantDetailView(plantId: plantId ?? 0).configureView(), isActive: $goToPlantDetail, label: {EmptyView()}
+                )
+                NavigationLink(destination: TakeTheQuizView().configureView(), isActive: $goToQuiz, label: {EmptyView()}
                 )
                 Text("Home").font(.title)
                     .padding(.leading)
@@ -40,6 +43,21 @@ struct HomeView: View {
                         }
                     }
                     .padding()
+                }
+                Spacer()
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10)
+                        .foregroundColor(Color.green)
+                    .padding()
+                    .onTapGesture {
+                        self.goToQuiz = true
+                    }
+                    
+                    Text("Take the Quiz")
+                        .font(.headline)
+                        .padding()
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
                 }
                 Spacer()
             }

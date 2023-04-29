@@ -23,6 +23,10 @@
 		6052C48329F9E4920026C32F /* PlantDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052C48229F9E4920026C32F /* PlantDetailInteractor.swift */; };
 		6052C48529F9E5530026C32F /* PlantDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052C48429F9E5530026C32F /* PlantDetailPresenter.swift */; };
 		6052C48729F9E96D0026C32F /* PlantDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052C48629F9E96D0026C32F /* PlantDetailConfigurator.swift */; };
+		607973AF29FC3E5A00767EFA /* TakeTheQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607973AE29FC3E5A00767EFA /* TakeTheQuizView.swift */; };
+		607973B129FC3E7A00767EFA /* TakeTheQuizConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607973B029FC3E7A00767EFA /* TakeTheQuizConfigurator.swift */; };
+		607973B329FC534400767EFA /* TakeTheQuizInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607973B229FC534400767EFA /* TakeTheQuizInteractor.swift */; };
+		607973B529FC53A100767EFA /* TakeTheQuizPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607973B429FC53A100767EFA /* TakeTheQuizPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		6052C48229F9E4920026C32F /* PlantDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailInteractor.swift; sourceTree = "<group>"; };
 		6052C48429F9E5530026C32F /* PlantDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailPresenter.swift; sourceTree = "<group>"; };
 		6052C48629F9E96D0026C32F /* PlantDetailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailConfigurator.swift; sourceTree = "<group>"; };
+		607973AE29FC3E5A00767EFA /* TakeTheQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeTheQuizView.swift; sourceTree = "<group>"; };
+		607973B029FC3E7A00767EFA /* TakeTheQuizConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeTheQuizConfigurator.swift; sourceTree = "<group>"; };
+		607973B229FC534400767EFA /* TakeTheQuizInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeTheQuizInteractor.swift; sourceTree = "<group>"; };
+		607973B429FC53A100767EFA /* TakeTheQuizPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeTheQuizPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,7 @@
 				6052C46E29F9BCE80026C32F /* Explore */,
 				6052C46829F996090026C32F /* Home */,
 				6052C47429F9BECA0026C32F /* Plant */,
+				607973AC29FC3E2900767EFA /* Quiz */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -263,6 +272,25 @@
 			children = (
 			);
 			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		607973AC29FC3E2900767EFA /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				607973AD29FC3E3F00767EFA /* TakeTheQuiz */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		607973AD29FC3E3F00767EFA /* TakeTheQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				607973AE29FC3E5A00767EFA /* TakeTheQuizView.swift */,
+				607973B229FC534400767EFA /* TakeTheQuizInteractor.swift */,
+				607973B429FC53A100767EFA /* TakeTheQuizPresenter.swift */,
+				607973B029FC3E7A00767EFA /* TakeTheQuizConfigurator.swift */,
+			);
+			path = TakeTheQuiz;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,13 +431,17 @@
 			files = (
 				6052C46D29F996540026C32F /* HomeView.swift in Sources */,
 				6052C48729F9E96D0026C32F /* PlantDetailConfigurator.swift in Sources */,
+				607973B129FC3E7A00767EFA /* TakeTheQuizConfigurator.swift in Sources */,
 				6052C43E29F9957F0026C32F /* ContentView.swift in Sources */,
 				6052C47329F9BD250026C32F /* ExploreView.swift in Sources */,
 				6052C48329F9E4920026C32F /* PlantDetailInteractor.swift in Sources */,
 				6052C43C29F9957F0026C32F /* PlantLadyApp.swift in Sources */,
 				6052C48129F9E39D0026C32F /* Plant.swift in Sources */,
 				6052C48529F9E5530026C32F /* PlantDetailPresenter.swift in Sources */,
+				607973AF29FC3E5A00767EFA /* TakeTheQuizView.swift in Sources */,
 				6052C47829F9BF010026C32F /* PlantDetailView.swift in Sources */,
+				607973B329FC534400767EFA /* TakeTheQuizInteractor.swift in Sources */,
+				607973B529FC53A100767EFA /* TakeTheQuizPresenter.swift in Sources */,
 				6052C47F29F9E3490026C32F /* PlantModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,7 +28,6 @@ struct PlantDetailView: View {
         VStack {
             Text(plantViewModel.name)
         }.onAppear{
-            print("on Appear")
             fetchPlantDetail(plantId: plantId)
         }
     }
