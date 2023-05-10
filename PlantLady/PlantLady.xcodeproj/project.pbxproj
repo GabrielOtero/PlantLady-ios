@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60204A8B2A0C4290007030E9 /* QuizQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60204A8A2A0C4290007030E9 /* QuizQuestion.swift */; };
 		6052C43C29F9957F0026C32F /* PlantLadyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052C43B29F9957F0026C32F /* PlantLadyApp.swift */; };
 		6052C43E29F9957F0026C32F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052C43D29F9957F0026C32F /* ContentView.swift */; };
 		6052C44029F995810026C32F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6052C43F29F995810026C32F /* Assets.xcassets */; };
@@ -27,6 +28,8 @@
 		607973B129FC3E7A00767EFA /* TakeTheQuizConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607973B029FC3E7A00767EFA /* TakeTheQuizConfigurator.swift */; };
 		607973B329FC534400767EFA /* TakeTheQuizInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607973B229FC534400767EFA /* TakeTheQuizInteractor.swift */; };
 		607973B529FC53A100767EFA /* TakeTheQuizPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607973B429FC53A100767EFA /* TakeTheQuizPresenter.swift */; };
+		607974182A0290B400767EFA /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607974172A0290B400767EFA /* QuizModel.swift */; };
+		6079741A2A0290FF00767EFA /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607974192A0290FF00767EFA /* Quiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60204A8A2A0C4290007030E9 /* QuizQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestion.swift; sourceTree = "<group>"; };
 		6052C43829F9957F0026C32F /* PlantLady.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantLady.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6052C43B29F9957F0026C32F /* PlantLadyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantLadyApp.swift; sourceTree = "<group>"; };
 		6052C43D29F9957F0026C32F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 		607973B029FC3E7A00767EFA /* TakeTheQuizConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeTheQuizConfigurator.swift; sourceTree = "<group>"; };
 		607973B229FC534400767EFA /* TakeTheQuizInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeTheQuizInteractor.swift; sourceTree = "<group>"; };
 		607973B429FC53A100767EFA /* TakeTheQuizPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeTheQuizPresenter.swift; sourceTree = "<group>"; };
+		607974172A0290B400767EFA /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
+		607974192A0290FF00767EFA /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +248,8 @@
 			isa = PBXGroup;
 			children = (
 				6052C48029F9E39D0026C32F /* Plant.swift */,
+				607974192A0290FF00767EFA /* Quiz.swift */,
+				60204A8A2A0C4290007030E9 /* QuizQuestion.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -277,7 +285,7 @@
 		607973AC29FC3E2900767EFA /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				607973AD29FC3E3F00767EFA /* TakeTheQuiz */,
+				607974162A02900C00767EFA /* Scenes */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -286,11 +294,20 @@
 			isa = PBXGroup;
 			children = (
 				607973AE29FC3E5A00767EFA /* TakeTheQuizView.swift */,
+				607974172A0290B400767EFA /* QuizModel.swift */,
 				607973B229FC534400767EFA /* TakeTheQuizInteractor.swift */,
 				607973B429FC53A100767EFA /* TakeTheQuizPresenter.swift */,
 				607973B029FC3E7A00767EFA /* TakeTheQuizConfigurator.swift */,
 			);
 			path = TakeTheQuiz;
+			sourceTree = "<group>";
+		};
+		607974162A02900C00767EFA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				607973AD29FC3E3F00767EFA /* TakeTheQuiz */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,6 +450,8 @@
 				6052C48729F9E96D0026C32F /* PlantDetailConfigurator.swift in Sources */,
 				607973B129FC3E7A00767EFA /* TakeTheQuizConfigurator.swift in Sources */,
 				6052C43E29F9957F0026C32F /* ContentView.swift in Sources */,
+				60204A8B2A0C4290007030E9 /* QuizQuestion.swift in Sources */,
+				607974182A0290B400767EFA /* QuizModel.swift in Sources */,
 				6052C47329F9BD250026C32F /* ExploreView.swift in Sources */,
 				6052C48329F9E4920026C32F /* PlantDetailInteractor.swift in Sources */,
 				6052C43C29F9957F0026C32F /* PlantLadyApp.swift in Sources */,
@@ -442,6 +461,7 @@
 				6052C47829F9BF010026C32F /* PlantDetailView.swift in Sources */,
 				607973B329FC534400767EFA /* TakeTheQuizInteractor.swift in Sources */,
 				607973B529FC53A100767EFA /* TakeTheQuizPresenter.swift in Sources */,
+				6079741A2A0290FF00767EFA /* Quiz.swift in Sources */,
 				6052C47F29F9E3490026C32F /* PlantModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

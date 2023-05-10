@@ -10,9 +10,9 @@ enum PlantDetail {
       var plantData: Plant
     }
 
-      class ViewModel : ObservableObject{
-          @Published var id: Int = 0
-          @Published var  name: String = ""
+    class ViewModel : ObservableObject{
+      @Published var id: Int = 0
+      @Published var  name: String = ""
     }
   }
 }
