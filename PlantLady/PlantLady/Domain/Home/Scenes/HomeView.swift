@@ -1,9 +1,3 @@
-//
-//  HomeView.swift
-//  PlantLady
-//
-//  Created by Gabriel Otero on 26/04/23.
-//
 
 import SwiftUI
 
@@ -17,7 +11,7 @@ struct HomeView: View {
             VStack {
                 NavigationLink(destination: PlantDetailView(plantId: plantId ?? 0).configureView(), isActive: $goToPlantDetail, label: {EmptyView()}
                 )
-                NavigationLink(destination: TakeTheQuizView().configureView(), isActive: $goToQuiz, label: {EmptyView()}
+                NavigationLink(destination: TakeTheQuizView(rootIsActive: self.$goToQuiz).configureView(), isActive: $goToQuiz, label: {EmptyView()}
                 )
                 Text("Home").font(.title)
                     .padding(.leading)

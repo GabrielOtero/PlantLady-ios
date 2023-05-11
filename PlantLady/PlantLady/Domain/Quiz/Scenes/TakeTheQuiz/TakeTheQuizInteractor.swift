@@ -1,9 +1,10 @@
 import Foundation
 import SwiftUI
+import Alamofire
 
 protocol TakeTheQuizBusinessLogic {
     func getQuizQuestions(request: QuizModel.GetQuizQuestions.Request)
-    func setSelectedAnswer(questionIndex: Int, answer: Int)
+    func setSelectedAnswer(questionId: Int, answer: Int)
     func getQuizResult()
 }
 
@@ -57,13 +58,28 @@ extension TakeTheQuizInteractor: TakeTheQuizBusinessLogic {
         presenter?.presentQuizQuestions(questions: self.questionList)
     }
 
-    func setSelectedAnswer(questionIndex: Int, answer: Int){
-        if let index = questionList.firstIndex(where: { $0.id == questionIndex }) {
+    func setSelectedAnswer(questionId: Int, answer: Int){
+        if let index = questionList.firstIndex(where: { $0.id == questionId }) {
             questionList[index].answer = answer
         }
     }
 
     func getQuizResult() {
-        print(self.questionList)
+        let queryParam: String =
+            "?idClimate=" + String(describing: questionList[0].answer) +
+            "&idGardenCare=" + String(describing: questionList[1].answer) +
+            "&idAppearance=" + String(describing: questionList[2].answer) +
+            "&idLight=" + String(describing: questionList[3].answer) +
+            "&idInplace=" + String(describing: questionList[4].answer) +
+            "&idPurpose=" + String(describing: questionList[5].answer) +
+            "&idEatable=" + String(describing: questionList[6].answer)
+
+
+        AF.request("https://yardman-prod.glitch.me/quiz" + queryParam)
+            .responseDecodable(of: [Plant].self){ response in
+            guard let plantListData = response.value else { return }
+
+                self.presenter?.goToPlantResultList(response:QuizModel.QuizResult.Response(resultList: plantListData))
+        }
     }
 }
